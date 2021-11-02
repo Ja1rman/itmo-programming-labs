@@ -21,11 +21,9 @@ interface Action{
 
 abstract class Person implements Action{
     String name, status;
-    public String getName() { return name; }
-    public String getStatus() { return status; }
-    public Person(String name, String status) {
-        name = name;
-        status = status;
+    public Person(String n, String s) {
+        name = n;
+        status = s;
     }
     @Override
     public String toString() {
@@ -82,7 +80,7 @@ class Vorchun extends Person{
     }
     @Override
     public void action(String prevAct){
-        System.out.print("Убежал из больницы\n");
+        System.out.println("Убежал из больницы");
         HospitalSlave.action("Убежал из больницы", this);
     }
 }
@@ -93,7 +91,7 @@ class Pululka extends Person{
     }
     @Override
     public void action(String prevAct){
-        System.out.print("Убежал из больницы\n");
+        System.out.println("Убежал из больницы");
         HospitalSlave.action("Убежал из больницы", this);
     }
 }
@@ -102,8 +100,6 @@ interface HospitalAction{
     public static void action(String action, Person pers){}
 }
 class HospitalSlave implements HospitalAction{
-    public HospitalSlave(){}
-
     public static void action(String action, Person pers){
         if(action.equals("Убежал из больницы")){
             System.out.println("Обслуживающий персонал больницы больше не занимается " + pers.name);
@@ -130,7 +126,6 @@ class HospitalSlave implements HospitalAction{
 
 class Hospital{
     ArrayList<Person> persons = new ArrayList<Person>();
-    public Hospital(){}
     public void addPerson(Person a){
         persons.add(a);
     }
