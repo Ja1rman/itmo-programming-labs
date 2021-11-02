@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class structModel {
     public static void main(String[] args) {
@@ -27,28 +28,26 @@ abstract class Person implements Action{
         status = status;
     }
     @Override
-    public boolean equals(Object obj) {
-        if (obj == this) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != this.getClass()) {
-            return false;
-        }
-        Person guest = (Person) obj;
-        return ((name.equals(guest.name) || (name != null && name.equals(guest.getName()))) && (status.equals(guest.status) || (status != null && status.equals(guest.getStatus()))));
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", status='" + status + '\'' +
+                '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return name.equals(person.name) && Objects.equals(status, person.status);
+    }
+
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
-        result = prime * result + ((status == null) ? 0 : status.hashCode());
-        return result;
+        return Objects.hash(name, status);
     }
-    @Override
-    public String toString(){
-        return name + " " + status;
-    }
+
     public void action(String prevAct){}
 }
 
