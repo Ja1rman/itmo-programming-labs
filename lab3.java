@@ -45,6 +45,10 @@ abstract class Person implements Action{
         result = prime * result + ((status == null) ? 0 : status.hashCode());
         return result;
     }
+    @Override
+    public String toString(){
+        return name + " " + status;
+    }
     public void action(String prevAct){}
 }
 
@@ -74,11 +78,9 @@ class Pulka extends Person{
 }
 
 class Vorchun extends Person{
-
     public Vorchun(String name, String status) {
         super(name, status);
     }
-
     @Override
     public void action(String prevAct){
         System.out.print("Убежал из больницы\n");
