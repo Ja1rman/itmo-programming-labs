@@ -15,15 +15,37 @@ public class structModel {
     }
 }
 
+enum Wishes {
+    SOUP ("Требую на обед варили суп из конфет и кашу из мармелада"),
+    CAULDRON ("Заказываю котлеты из земляники с грибным соусом"),
+    PUREE ("Приказываю принести яблочное пюре");
+
+    private String title;
+
+    Wishes(String title) {
+        this.title = title;
+    }
+    public String getTitle() {
+        return title;
+    }
+
+    @Override
+    public String toString() {
+        return "Wishes{" +
+                "title='" + title + '\'' +
+                '}';
+    }
+}
+
 interface Action{
     public void action(String prevAct);
 }
 
 abstract class Person implements Action{
     String name, status;
-    public Person(String n, String s) {
-        name = n;
-        status = s;
+    public Person(String name, String status) {
+        this.name = name;
+        this.status = status;
     }
     @Override
     public String toString() {
@@ -53,11 +75,10 @@ class Pulka extends Person{
     public Pulka(String name, String status) {
         super(name, status);
     }
+
     @Override
     public void action(String prevAct){
-        String[] actions = {"Требую на обед варили суп из конфет и кашу из мармелада",
-                            "Заказываю котлеты из земляники с грибным соусом",
-                            "Приказываю принести яблочное пюре"};
+
         if(prevAct.equals("Приказываю принести яблочное пюре")){
             System.out.println(name + ": Я просил грушевого квасу");
             HospitalSlave.action("Я просил грушевого квасу", this);
@@ -67,6 +88,7 @@ class Pulka extends Person{
             HospitalSlave.action("Квас воняет луком", this);
         }
         else{
+            String[] actions = {Wishes.SOUP.getTitle(), Wishes.CAULDRON.getTitle(), Wishes.PUREE.getTitle()};
             String action = actions[(int) (Math.random() * 3)];
             System.out.println(action);
             HospitalSlave.action(action, this);
