@@ -35,7 +35,7 @@ abstract class Person implements Action{
             return false;
         }
         Person guest = (Person) obj;
-        return ((name == guest.name || (name != null && name.equals(guest.getName()))) && (status == guest.status || (status != null && status.equals(guest.getStatus()))));
+        return ((name.equals(guest.name) || (name != null && name.equals(guest.getName()))) && (status.equals(guest.status) || (status != null && status.equals(guest.getStatus()))));
     }
     @Override
     public int hashCode() {
