@@ -61,11 +61,11 @@ class Pulka extends Person{
         String[] actions = {"Требую на обед варили суп из конфет и кашу из мармелада",
                             "Заказываю котлеты из земляники с грибным соусом",
                             "Приказываю принести яблочное пюре"};
-        if(prevAct == "Приказываю принести яблочное пюре"){
+        if(prevAct.equals("Приказываю принести яблочное пюре")){
             System.out.println(name + ": Я просил грушевого квасу");
             HospitalSlave.action("Я просил грушевого квасу", this);
         }
-        else if(prevAct == "Я просил грушевого квасу"){
+        else if(prevAct.equals("Я просил грушевого квасу")){
             System.out.println(name + ": Квас воняет луком");
             HospitalSlave.action("Квас воняет луком", this);
         }
@@ -106,21 +106,21 @@ class HospitalSlave implements HospitalAction{
     public HospitalSlave(){}
 
     public static void action(String action, Person pers){
-        if(action == "Убежал из больницы"){
+        if(action.equals("Убежал из больницы")){
             System.out.println("Обслуживающий персонал больницы больше не занимается " + pers.name);
         }
-        else if(action == "Приказываю принести яблочное пюре"){
+        else if(action.equals("Приказываю принести яблочное пюре")){
             System.out.println("Обслуживающий персонал больницы принёс яблочкное пюре для " + pers.name);
             pers.action("Приказываю принести яблочное пюре");
         }
-        else if(action == "Я просил грушевого квасу"){
+        else if(action.equals("Я просил грушевого квасу")){
             System.out.println("Обслуживающий персонал больницы принёс грушевый квас для " + pers.name);
             pers.action("Я просил грушевого квасу");
         }
-        else if(action == "Квас воняет луком"){
+        else if(action.equals("Квас воняет луком")){
             System.out.println("Обслуживающий персонал больницы в тильте и хейтит позера " + pers.name);
         }
-        else if(action == "Заказываю котлеты из земляники с грибным соусом"){
+        else if(action.equals("Заказываю котлеты из земляники с грибным соусом")){
             System.out.println("Обслуживающий персонал больницы считает, что таких котлет не бывает");
         }
         else{
