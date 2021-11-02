@@ -37,6 +37,14 @@ abstract class Person implements Action{
         Person guest = (Person) obj;
         return ((name == guest.name || (name != null && name.equals(guest.getName()))) && (status == guest.status || (status != null && status.equals(guest.getStatus()))));
     }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((status == null) ? 0 : status.hashCode());
+        return result;
+    }
     public void action(String prevAct){}
 }
 
