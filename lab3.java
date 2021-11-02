@@ -99,7 +99,10 @@ class Pululka extends Person{
     }
 }
 
-class HospitalSlave{
+interface HospitalAction{
+    public static void action(String action, Person pers){}
+}
+class HospitalSlave implements HospitalAction{
     public HospitalSlave(){}
 
     public static void action(String action, Person pers){
