@@ -1,14 +1,13 @@
 import java.util.*
 
 class Hospital {
-    private val persons = mutableListOf<Person>()
-    fun addPerson(a: Person) {
+    private val persons = mutableListOf<Action>()
+    fun addPerson(a: Action) {
         persons.add(a)
     }
 
     fun start() {
         for (pers in persons) {
-            print(pers.name + ": ")
             pers.action()
         }
     }
