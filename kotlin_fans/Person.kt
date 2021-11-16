@@ -18,6 +18,4 @@ abstract class Person(var name: String, var status: String) : Action {
     override fun hashCode(): Int {
         return Objects.hash(name, status)
     }
-
-    override fun action() {}
 }

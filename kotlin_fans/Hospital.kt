@@ -1,7 +1,7 @@
 import java.util.*
 
 class Hospital {
-    var persons: MutableList<Person> = ArrayList()
+    private val persons = mutableListOf<Person>()
     fun addPerson(a: Person) {
         persons.add(a)
     }
