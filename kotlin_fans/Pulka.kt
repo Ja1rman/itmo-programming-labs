@@ -14,7 +14,7 @@ class Pulka(name: String, status: String) : Person(name, status) {
             }
             else -> {
                 val actions = arrayOf(Wishes.SOUP.title, Wishes.CAULDRON.title, Wishes.PUREE.title)
-                val action = actions[(1..3).random()]
+                val action = actions[(0..2).random()]
                 println(action)
                 prevAct = action
                 HospitalSlave.action(action, this)
