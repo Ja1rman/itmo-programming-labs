@@ -1,5 +1,2 @@
-class MoveException() : Exception() {
-    override fun toString(): String {
-        return "Неверный запрос в больницу"
-    }
+class MoveException : Exception("Неверный запрос в больницу") {
 }
