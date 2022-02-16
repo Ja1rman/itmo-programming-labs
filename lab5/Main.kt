@@ -7,16 +7,19 @@ import io.JsonConvertor
 import java.io.BufferedReader
 import java.io.FileInputStream
 import java.io.InputStreamReader
-import java.util.*
-
 
 var scan = BufferedReader(InputStreamReader(System.`in`))
 
 fun main(args: Array<String>) {
     while (true) {
         print(">>> ")
-        if (scan.readLine() == null) scan = BufferedReader(InputStreamReader(System.`in`))
-        val command = scan.readLine().split(" ")
+        var commands = scan.readLine() ?: "-1a"
+        if (commands == "-1a") {
+            scan = BufferedReader(InputStreamReader(System.`in`))
+            commands = scan.readLine()
+        }
+        val command = commands.split(" ")
+
         when (command[0]) {
             "exit" -> break
             "add" -> {
