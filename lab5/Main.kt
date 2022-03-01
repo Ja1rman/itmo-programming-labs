@@ -169,6 +169,9 @@ fun main(args: Array<String>) {
             "execute_script" -> {
                 scan = BufferedReader(InputStreamReader(FileInputStream(command[1])))
             }
+            else -> {
+                println("Вы ввели говно.")
+            }
         }
     }
 }
