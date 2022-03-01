@@ -1,0 +1,59 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/lab5/[root]/index.html
+$dokka.location:/MainKt///PointingToDeclaration/lab5/[root]/-main-kt/index.html
+$dokka.location:/MainKt/enterVals/#/PointingToDeclaration/lab5/[root]/-main-kt/enter-vals.html
+$dokka.location:/MainKt/getScan/#/PointingToDeclaration/lab5/[root]/-main-kt/get-scan.html
+$dokka.location:/MainKt/main/#kotlin.Array[kotlin.String]/PointingToDeclaration/lab5/[root]/-main-kt/main.html
+$dokka.location:/MainKt/setScan/#java.io.BufferedReader/PointingToDeclaration/lab5/[root]/-main-kt/set-scan.html
+$dokka.location:datamanager////PointingToDeclaration/lab5/datamanager/index.html
+$dokka.location:datamanager/DataManager///PointingToDeclaration/lab5/datamanager/-data-manager/index.html
+$dokka.location:datamanager/DataManager/add/#entities.LabWork/PointingToDeclaration/lab5/datamanager/-data-manager/add.html
+$dokka.location:datamanager/DataManager/addIfMax/#entities.LabWork/PointingToDeclaration/lab5/datamanager/-data-manager/add-if-max.html
+$dokka.location:datamanager/DataManager/clearData/#/PointingToDeclaration/lab5/datamanager/-data-manager/clear-data.html
+$dokka.location:datamanager/DataManager/countLessDifficulty/#entities.Difficulty/PointingToDeclaration/lab5/datamanager/-data-manager/count-less-difficulty.html
+$dokka.location:datamanager/DataManager/getAllItems/#/PointingToDeclaration/lab5/datamanager/-data-manager/get-all-items.html
+$dokka.location:datamanager/DataManager/getItemsNumber/#/PointingToDeclaration/lab5/datamanager/-data-manager/get-items-number.html
+$dokka.location:datamanager/DataManager/removeById/#kotlin.Long/PointingToDeclaration/lab5/datamanager/-data-manager/remove-by-id.html
+$dokka.location:datamanager/DataManager/removeByMP/#kotlin.Long/PointingToDeclaration/lab5/datamanager/-data-manager/remove-by-m-p.html
+$dokka.location:datamanager/DataManager/removeLast/#/PointingToDeclaration/lab5/datamanager/-data-manager/remove-last.html
+$dokka.location:datamanager/DataManager/removeLower/#entities.LabWork/PointingToDeclaration/lab5/datamanager/-data-manager/remove-lower.html
+$dokka.location:datamanager/DataManager/sumMP/#/PointingToDeclaration/lab5/datamanager/-data-manager/sum-m-p.html
+$dokka.location:datamanager/DataManager/updateById/#kotlin.Long#entities.LabWork/PointingToDeclaration/lab5/datamanager/-data-manager/update-by-id.html
+$dokka.location:entities////PointingToDeclaration/lab5/entities/index.html
+$dokka.location:entities/Coordinates///PointingToDeclaration/lab5/entities/-coordinates/index.html
+$dokka.location:entities/Coordinates/Coordinates/#kotlin.Long#kotlin.Long/PointingToDeclaration/lab5/entities/-coordinates/-coordinates.html
+$dokka.location:entities/Coordinates/getX/#/PointingToDeclaration/lab5/entities/-coordinates/get-x.html
+$dokka.location:entities/Coordinates/getY/#/PointingToDeclaration/lab5/entities/-coordinates/get-y.html
+$dokka.location:entities/Coordinates/toString/#/PointingToDeclaration/lab5/entities/-coordinates/to-string.html
+$dokka.location:entities/Difficulty.HARD///PointingToDeclaration/lab5/entities/-difficulty/-h-a-r-d/index.html
+$dokka.location:entities/Difficulty.NORMAL///PointingToDeclaration/lab5/entities/-difficulty/-n-o-r-m-a-l/index.html
+$dokka.location:entities/Difficulty.TERRIBLE///PointingToDeclaration/lab5/entities/-difficulty/-t-e-r-r-i-b-l-e/index.html
+$dokka.location:entities/Difficulty.VERY_EASY///PointingToDeclaration/lab5/entities/-difficulty/-v-e-r-y_-e-a-s-y/index.html
+$dokka.location:entities/Difficulty.VERY_HARD///PointingToDeclaration/lab5/entities/-difficulty/-v-e-r-y_-h-a-r-d/index.html
+$dokka.location:entities/Difficulty///PointingToDeclaration/lab5/entities/-difficulty/index.html
+$dokka.location:entities/Difficulty/getIndex/#/PointingToDeclaration/lab5/entities/-difficulty/get-index.html
+$dokka.location:entities/Discipline///PointingToDeclaration/lab5/entities/-discipline/index.html
+$dokka.location:entities/Discipline/Discipline/#kotlin.String#kotlin.Int/PointingToDeclaration/lab5/entities/-discipline/-discipline.html
+$dokka.location:entities/Discipline/getName/#/PointingToDeclaration/lab5/entities/-discipline/get-name.html
+$dokka.location:entities/Discipline/getSelfStudyHours/#/PointingToDeclaration/lab5/entities/-discipline/get-self-study-hours.html
+$dokka.location:entities/LabWork///PointingToDeclaration/lab5/entities/-lab-work/index.html
+$dokka.location:entities/LabWork/LabWork/#kotlin.Long#kotlin.String#entities.Coordinates#kotlin.Long?#entities.Difficulty?#java.util.Date#entities.Discipline/PointingToDeclaration/lab5/entities/-lab-work/-lab-work.html
+$dokka.location:entities/LabWork/compareTo/#entities.LabWork/PointingToDeclaration/lab5/entities/-lab-work/compare-to.html
+$dokka.location:entities/LabWork/getCoordinates/#/PointingToDeclaration/lab5/entities/-lab-work/get-coordinates.html
+$dokka.location:entities/LabWork/getCreationDate/#/PointingToDeclaration/lab5/entities/-lab-work/get-creation-date.html
+$dokka.location:entities/LabWork/getDifficulty/#/PointingToDeclaration/lab5/entities/-lab-work/get-difficulty.html
+$dokka.location:entities/LabWork/getDiscipline/#/PointingToDeclaration/lab5/entities/-lab-work/get-discipline.html
+$dokka.location:entities/LabWork/getId/#/PointingToDeclaration/lab5/entities/-lab-work/get-id.html
+$dokka.location:entities/LabWork/getMinimalPoint/#/PointingToDeclaration/lab5/entities/-lab-work/get-minimal-point.html
+$dokka.location:entities/LabWork/getName/#/PointingToDeclaration/lab5/entities/-lab-work/get-name.html
+$dokka.location:entities/LabWork/setId/#kotlin.Long/PointingToDeclaration/lab5/entities/-lab-work/set-id.html
+$dokka.location:io////PointingToDeclaration/lab5/io/index.html
+$dokka.location:io/JsonConvertor///PointingToDeclaration/lab5/io/-json-convertor/index.html
+$dokka.location:io/JsonConvertor/save/#/PointingToDeclaration/lab5/io/-json-convertor/save.html
+$dokka.location:kotlin/Difficulty/getName/#/PointingToDeclaration/lab5/entities/-difficulty/get-name.html
+$dokka.location:kotlin/Difficulty/getOrdinal/#/PointingToDeclaration/lab5/entities/-difficulty/get-ordinal.html
+datamanager
+entities
+io
+
