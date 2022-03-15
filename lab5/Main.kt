@@ -7,10 +7,13 @@ import io.JsonConvertor
 import java.io.BufferedReader
 import java.io.FileInputStream
 import java.io.InputStreamReader
-import org.apache.logging.log4j.kotlin.logger
+//import org.apache.logging.log4j.kotlin.logger
+import mu.KotlinLogging
+
 
 var scan = BufferedReader(InputStreamReader(System.`in`))
-var logger = logger("Dumb")
+//var logger = logger("Dumb")
+var logger = KotlinLogging.logger {}
 fun main(args: Array<String>) {
 
     while (true) {
